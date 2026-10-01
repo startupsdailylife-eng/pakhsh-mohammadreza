@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پخش محمدرضا | عمده‌فروشی مواد غذایی</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#17202a;--muted:#697586;--primary:#0f766e;--primary2:#115e59;--line:#e7e9ee;--danger:#dc2626;--shadow:0 12px 35px rgba(16,24,40,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text)}
+button,input,select{font:inherit}button{cursor:pointer;border:0}.container{max-width:1180px;margin:auto;padding:0 22px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:21px;font-weight:900;color:var(--primary)}.navlinks{display:flex;gap:24px;color:#475467;font-size:14px}.navlinks a{color:inherit;text-decoration:none}
+.cart{background:#ecfdf5;color:var(--primary);padding:11px 15px;border-radius:12px;font-weight:700}
+.hero{padding:58px 0 35px;background:linear-gradient(135deg,#ecfdf5,#f8fafc)}.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:#d1fae5;color:#065f46;padding:8px 13px;border-radius:999px;font-size:13px;font-weight:700}
+h1{font-size:44px;line-height:1.3;margin:18px 0 12px}h1 span{color:var(--primary)}.lead{color:var(--muted);line-height:2;font-size:17px;max-width:650px}
+.btn{background:var(--primary);color:white;padding:13px 19px;border-radius:12px;font-weight:700}.btn:hover{background:var(--primary2)}
+.btn.secondary{background:#fff;color:var(--primary);border:1px solid #b7d9d5}.actions{display:flex;gap:12px;margin-top:25px;flex-wrap:wrap}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.stat{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line)}.stat:last-child{border:0}.stat b{font-size:20px}
+section{padding:45px 0}.section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.section-title h2{margin:0;font-size:26px}.section-title p{margin:6px 0 0;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 4px 16px rgba(16,24,40,.04)}
+.product-img{height:145px;background:linear-gradient(135deg,#f0fdf4,#e2e8f0);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:48px;margin-bottom:15px}
+.product h3{margin:0 0 8px;font-size:16px}.unit{font-size:12px;color:var(--muted)}.price{font-size:18px;font-weight:900;margin:13px 0}.old{font-size:12px;color:#98a2b3;text-decoration:line-through;font-weight:400}.add{width:100%;padding:10px;border-radius:10px;background:#f0fdfa;color:var(--primary);font-weight:800}
+.categories{grid-template-columns:repeat(3,1fr)}.cat{display:flex;align-items:center;gap:15px}.cat-icon{width:50px;height:50px;border-radius:14px;background:#ecfdf5;display:grid;place-items:center;font-size:24px}
+.pricebox{margin-top:12px;background:#f8fafc;border-radius:12px;padding:10px;font-size:12px;line-height:2;color:#475467}
+.order{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.status{display:inline-block;padding:6px 10px;border-radius:999px;background:#fff7ed;color:#c2410c;font-size:12px;font-weight:700}
+footer{background:#111827;color:#d1d5db;padding:35px 0;margin-top:20px}.footergrid{display:flex;justify-content:space-between;gap:20px}.footergrid h3{color:#fff;margin-top:0}
+.demo{position:fixed;bottom:18px;left:18px;background:#111827;color:#fff;padding:11px 15px;border-radius:12px;font-size:12px;box-shadow:var(--shadow)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.navlinks{display:none}.grid,.categories{grid-template-columns:1fr}h1{font-size:31px}.hero{padding-top:35px}.footergrid{flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+  <div class="logo">پخش محمدرضا</div>
+  <nav class="navlinks"><a href="#products">محصولات</a><a href="#categories">دسته‌بندی‌ها</a><a href="#orders">سفارش‌های من</a></nav>
+  <button class="cart" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">🛒 سبد خرید <span id="cartCount">0</span></button>
+</div></header>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<span class="badge">عمده‌فروشی تخصصی برای کسب‌وکارها</span>
+<h1>خرید عمده مواد غذایی،<br><span>ساده و سریع</span></h1>
+<p class="lead">سامانه سفارش آنلاین پخش محمدرضا برای رستوران‌ها، فست‌فودها و کافه‌ها. قیمت‌های پلکانی، سفارش آسان و پیگیری سفارش در یک پنل.</p>
+<div class="actions"><button class="btn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">مشاهده محصولات</button><button class="btn secondary">ورود / ثبت‌نام</button></div>
+</div>
+<div class="hero-card">
+<div class="stat"><span>دسته‌های کسب‌وکار</span><b>۳</b></div>
+<div class="stat"><span>قیمت‌گذاری</span><b>پلکانی</b></div>
+<div class="stat"><span>سفارش</span><b>آنلاین</b></div>
+<div class="stat"><span>محدوده اولیه</span><b>اصفهان</b></div>
+</div>
+</div></section>
+
+<section id="categories"><div class="container">
+<div class="section-title"><div><h2>برای کسب‌وکار شما</h2><p>محصولات متناسب با نوع فعالیت خود را پیدا کنید.</p></div></div>
+<div class="grid categories">
+<div class="card cat"><div class="cat-icon">🍽️</div><div><b>رستوران</b><div class="unit">مواد اولیه و اقلام مصرفی</div></div></div>
+<div class="card cat"><div class="cat-icon">🍔</div><div><b>فست‌فود</b><div class="unit">پنیر، گوشت، سس، سیب‌زمینی و...</div></div></div>
+<div class="card cat"><div class="cat-icon">☕</div><div><b>کافه</b><div class="unit">قهوه، شیر، سیروپ و پودرها</div></div></div>
+</div></div></section>
+
+<section id="products"><div class="container">
+<div class="section-title"><div><h2>محصولات منتخب</h2><p>نمونه‌ای از کاتالوگ عمده‌فروشی</p></div><button class="btn secondary">همه محصولات</button></div>
+<div class="grid">
+<div class="card product"><div class="product-img">🧀</div><h3>پنیر پیتزا موزارلا</h3><span class="unit">واحد فروش: کیلوگرم</span><div class="price">۴۷۰٬۰۰۰ تومان <span class="old">۵۰۰٬۰۰۰</span></div><div class="pricebox">۱ تا ۹ کیلو: ۵۰۰٬۰۰۰<br>۱۰ تا ۴۹ کیلو: ۴۷۰٬۰۰۰<br>۵۰+ کیلو: ۴۴۰٬۰۰۰</div><button class="add" onclick="addToCart(this)">افزودن به سبد</button></div>
+<div class="card product"><div class="product-img">🍟</div><h3>سیب‌زمینی منجمد</h3><span class="unit">واحد فروش: کارتن</span><div class="price">تماس برای قیمت</div><div class="pricebox">قیمت عمده بر اساس تعداد سفارش محاسبه می‌شود.</div><button class="add" onclick="addToCart(this)">افزودن به سبد</button></div>
+<div class="card product"><div class="product-img">🍅</div><h3>سس کچاپ</h3><span class="unit">واحد فروش: کارتن</span><div class="price">تماس برای قیمت</div><div class="pricebox">مناسب رستوران و فست‌فود</div><button class="add" onclick="addToCart(this)">افزودن به سبد</button></div>
+<div class="card product"><div class="product-img">☕</div><h3>قهوه اسپرسو</h3><span class="unit">واحد فروش: کیلوگرم</span><div class="price">تماس برای قیمت</div><div class="pricebox">مناسب کافه‌ها و مجموعه‌های پذیرایی</div><button class="add" onclick="addToCart(this)">افزودن به سبد</button></div>
+</div></div></section>
+
+<section id="orders"><div class="container">
+<div class="section-title"><div><h2>آخرین سفارش</h2><p>نمونه نمایشی پنل مشتری</p></div></div>
+<div class="order">
+<div style="display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap">
+<div><b>سفارش #۱</b><div class="unit" style="margin-top:7px">۳۰ شهریور ۱۴۰۵ · آدرس محل کار · اصفهان</div></div>
+<span class="status">در انتظار تأیید</span>
+</div>
+<hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+<div style="display:flex;justify-content:space-between"><span>پنیر پیتزا موزارلا × ۲۰ کیلو</span><b>۹٬۴۰۰٬۰۰۰ تومان</b></div>
+</div></div></section>
+</main>
+
+<footer><div class="container footergrid"><div><h3>پخش محمدرضا</h3><p>سامانه سفارش عمده مواد غذایی برای کسب‌وکارها.</p></div><div><h3>خدمات</h3><p>رستوران · فست‌فود · کافه</p></div><div><h3>تماس</h3><p>اصفهان · سفارش و پشتیبانی</p></div></div></footer>
+<div class="demo">نسخه پرزنتی HTML · نمونه رابط MVP</div>
+<script>
+let count=0;
+function addToCart(btn){count++;document.getElementById('cartCount').textContent=count;btn.textContent='✓ به سبد اضافه شد';btn.style.background='#dcfce7';setTimeout(()=>{btn.textContent='افزودن به سبد';btn.style.background=''},1000)}
+</script>
+</body></html>
